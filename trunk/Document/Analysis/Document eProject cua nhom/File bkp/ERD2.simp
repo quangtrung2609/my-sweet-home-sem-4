@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="4.80">
+  <meta>
+    <name>Project</name>
+    <authors />
+    <description />
+  </meta>
+  <management>
+    <persons />
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <items>
+    <item id="di533946041598955570" cid="ENT001" type="erd-entity" name="Transaction Details" style-class="" is-abstract="false">
+      <stereotypes />
+      <tagged-values />
+      <documentation>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs17\par
+}
+</documentation>
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute name="Trans_ID" type="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" />
+        <attribute name="Trans_Time" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Trans_Money" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Trans_Detail" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+      </attributes>
+    </item>
+    <item id="di596684831479352134" cid="ENT002" type="erd-entity" name="News" style-class="" is-abstract="false">
+      <stereotypes />
+      <tagged-values />
+      <documentation>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs17\par
+}
+</documentation>
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute name="News_ID" type="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" />
+        <attribute name="News_Title" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="News_Contents" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="News_Image" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+      </attributes>
+    </item>
+    <item id="di863145617551588794" cid="ENT003" type="erd-entity" name="FAQs" style-class="" is-abstract="false">
+      <stereotypes />
+      <tagged-values />
+      <documentation>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs17\par
+}
+</documentation>
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute name="FAQs_ID" type="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" />
+        <attribute name="Question " type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Answer" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+      </attributes>
+    </item>
+    <item id="di723915668894389757" cid="ENT004" type="erd-entity" name="Account" style-class="" is-abstract="false">
+      <stereotypes />
+      <tagged-values />
+      <documentation>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs17\par
+}
+</documentation>
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute name="Account_Number" type="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" />
+        <attribute name="Account_Name" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Account_Email" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Account_Telephone" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="Account_Balance" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+      </attributes>
+    </item>
+    <item id="di509172810282078520" cid="ENT005" type="erd-entity" name="Currency" style-class="" is-abstract="false">
+      <stereotypes />
+      <tagged-values />
+      <documentation>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs17\par
+}
+</documentation>
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute name="Currency_ID" type="" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" />
+        <attribute name="Currency_Name" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+        <attribute name="VND_Rate" type="" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" />
+      </attributes>
+    </item>
+  </items>
+  <models>
+    <model id="p790293759623997338" name="Model 1" type="model" namespace="">
+      <documentation />
+      <sub-models />
+      <diagram type="entity-relationship" id="p975889906309785130" name="Diagram1">
+        <meta>
+          <authors />
+          <description />
+          <creation-date>07/31/2012 23:42:16</creation-date>
+          <change-date>08/01/2012 23:50:01</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <documentation />
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di596684831479352134" show-cid="false" show-parent-name="false" show-stereotypes="false" show-tagged-values="false" type="entity">
+            <layout ax="540" ay="113" awidth="150" aheight="120" x="540" y="113" width="0" height="120" />
+            <erd-entity />
+          </item>
+          <item id="di863145617551588794" show-cid="false" show-parent-name="false" show-stereotypes="false" show-tagged-values="false" type="entity">
+            <layout ax="408" ay="-109" awidth="134" aheight="100" x="408" y="-109" width="134" height="100" />
+            <erd-entity />
+          </item>
+          <item id="di723915668894389757" show-cid="false" show-parent-name="false" show-stereotypes="false" show-tagged-values="false" type="entity">
+            <layout ax="235" ay="104" awidth="150" aheight="121" x="235" y="104" width="0" height="121" />
+            <erd-entity />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

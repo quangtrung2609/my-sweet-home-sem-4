@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./template/HomeTemplate.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:define name="title">
+        title
+    </ui:define>
+
+    <ui:define name="col1">
+        col1
+    </ui:define>
+
+    <ui:define name="col1_2">
+        <f:view>
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="UserName:" for="userName" />
+                    <h:inputText id="userName" value="#{MemberMBean.member.userName}" title="UserName" required="true" requiredMessage="The UserName field is required."/>
+                    <h:outputLabel value="Address:" for="address" />
+                    <h:inputText id="address" value="#{MemberMBean.member.address}" title="Address" />
+                    <h:commandButton value="insert" action="#{MemberMBean.insertMember()}"/>
+               
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </ui:define>
+
+    <ui:define name="col2_2">
+        col2_2
+    </ui:define>
+
+    <ui:define name="body3">
+        body3
+    </ui:define>
+
+</ui:composition>
